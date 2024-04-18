@@ -1,0 +1,6 @@
+<h1>Doctor Portal</h1>
+<%= javascript_include_tag 'application' %>
+<%= javascript_include_tag 'chartkick' %>
+<p>Welcome, <%= current_user.email %>!</p>
+<div id="chart"></div>
+<%= line_chart @patients_by_day %>
